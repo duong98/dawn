@@ -82,16 +82,6 @@
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  .header__inline-menu,
-  .header__left-search {
-    display: flex;
-    align-items: center;
-  }
-
-  .header__left-search {
-    margin-left: 1rem; /* space between menu and search icon */
-  }
-
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
@@ -188,11 +178,6 @@
       endif
     %}
 
-    <div class="header__left-search">
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
-    </div>
-
-
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
@@ -247,7 +232,7 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% comment %} {% render 'header-search', input_id: 'Search-In-Modal' %} {% endcomment %}
+      {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a
