@@ -82,6 +82,16 @@
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .header__inline-menu,
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
+.header__search {
+  margin-left: 1rem; /* space between menu and search icon */
+}
+
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
@@ -179,9 +189,7 @@
     %}
 
     <div class="header__icons">
-
       {% render 'header-search', input_id: 'Search-In-Modal' %}
-
     </div>
 
 
