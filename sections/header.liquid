@@ -13,6 +13,27 @@
 
 
 <style>
+  .header__mid-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__inline-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__search--inline {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 989px) {
+  .header__search--inline { display: none; }
+}
+
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
