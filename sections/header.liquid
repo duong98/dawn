@@ -83,12 +83,12 @@
   }
 
   .header__inline-menu,
-  .header__search {
+  .header__left-search {
     display: flex;
     align-items: center;
   }
 
-  .header__search {
+  .header__left-search {
     margin-left: 1rem; /* space between menu and search icon */
   }
 
@@ -188,7 +188,7 @@
       endif
     %}
 
-    <div class="header__icons">
+    <div class="header__left-search">
       {% render 'header-search', input_id: 'Search-In-Modal' %}
     </div>
 
