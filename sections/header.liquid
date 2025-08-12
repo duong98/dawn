@@ -326,7 +326,7 @@
       </h1>
 
       <!-- Right side: account + cart icons (search removed) -->
-      <div class="header__icons">
+      {% comment %} <div class="header__icons">
         {%- if shop.customer_accounts_enabled -%}
           <a href="{{ routes.account_url }}" class="header__icon-link">
             {% render 'icon-account' %}
@@ -335,7 +335,7 @@
         <a href="{{ routes.cart_url }}" class="header__icon-link">
           {% render 'icon-cart' %}
         </a>
-      </div>
+      </div> {% endcomment %}
     </div>
 
 {% endcase %}
