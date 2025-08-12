@@ -17,6 +17,11 @@
         "color_scheme": "scheme-1"
       }
     },
+    "call-to-action": {
+      "type": "call-to-action",
+      "settings": {
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -36,6 +41,7 @@
   },
   "order": [
     "banner",
+    "call-to-action",
     "product-grid"
   ]
 }
