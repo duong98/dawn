@@ -9,64 +9,8 @@
  */
 {
   "current": {
-    "logo_width": 90,
-    "color_schemes": {
-      "scheme-1": {
-        "settings": {
-          "background": "#FFFFFF",
-          "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#FFFFFF",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-2": {
-        "settings": {
-          "background": "#F3F3F3",
-          "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#F3F3F3",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-3": {
-        "settings": {
-          "background": "#242833",
-          "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
-          "button_label": "#000000",
-          "secondary_button_label": "#FFFFFF",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-4": {
-        "settings": {
-          "background": "#121212",
-          "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
-          "button_label": "#121212",
-          "secondary_button_label": "#FFFFFF",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-5": {
-        "settings": {
-          "background": "#334FB4",
-          "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
-          "button_label": "#334FB4",
-          "secondary_button_label": "#FFFFFF",
-          "shadow": "#121212"
-        }
-      }
-    },
+    "logo": "shopify://shop_images/bss.png",
+    "logo_width": 100,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -94,7 +38,7 @@
     "inputs_radius": 0,
     "inputs_shadow_opacity": 0,
     "inputs_shadow_horizontal_offset": 0,
-    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_vertical_offset": 8,
     "inputs_shadow_blur": 5,
     "card_style": "standard",
     "card_image_padding": 0,
@@ -160,14 +104,14 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "social_twitter_link": "",
     "social_facebook_link": "",
-    "social_pinterest_link": "",
     "social_instagram_link": "",
-    "social_tiktok_link": "",
-    "social_tumblr_link": "",
-    "social_snapchat_link": "",
     "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
@@ -191,11 +135,69 @@
         }
       }
     },
+    "content_for_index": [],
     "blocks": {
       "pagefly-page-builder": {
         "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {}
+      }
+    },
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#f3f3f3",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#f3f3f3",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "#242833",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#000000",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "#121212",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#121212",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-5": {
+        "settings": {
+          "background": "#334fb4",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#334fb4",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
       }
     }
   },
