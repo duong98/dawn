@@ -274,13 +274,14 @@
         {% comment %} {#-- Desktop: show text --#} {% endcomment %}
         <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+          class="link focus-inset"
           rel="nofollow"
         >
           <span class="small-hide">
             {%- if customer -%}
-              {{ 'customer.account_fallback' | t }}
+              {{ 'customer.account_fallback' | t | upcase }}
             {%- else -%}
-              {{ 'customer.log_in' | t }}
+              {{ 'customer.log_in' | t | upcase }}
             {%- endif -%}
           </span>
         </a>
