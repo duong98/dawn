@@ -5,6 +5,24 @@
     - localPosition: pass in the position in which the form is coming up to create specific IDs
 {%- endcomment -%}
 
+<style>
+  .localization-wrapper {
+    display: flex;
+    align-items: center; /* vertical alignment */
+    gap: 0.5rem; /* spacing between span & button */
+  }
+
+  .localization-wrapper span {
+    white-space: nowrap; /* prevent currency wrapping */
+  }
+
+  @media screen and (min-width: 750px) {
+    .localization-wrapper {
+      gap: 1rem;
+    }
+  }
+</style>
+
 {%- liquid
   assign currencies = localization.available_countries | map: 'currency' | map: 'iso_code' | uniq
   assign popular_countries = localization.available_countries | where: 'popular?' | sort: 'name'
@@ -26,20 +44,24 @@
 %}
 
 <div class="disclosure">
-  <button
-    type="button"
-    class="disclosure__button localization-form__select localization-selector link link--text caption-large"
-    aria-expanded="false"
-    aria-controls="{{ localPosition }}-country-results"
-    aria-describedby="{{ localPosition }}Label"
-  >
+  <div class="localization-wrapper">
     <span>
-      {{- localization.country.name }} |
       {{ localization.country.currency.iso_code }}
       {{ localization.country.currency.symbol -}}
     </span>
-    {{ 'icon-caret.svg' | inline_asset_content }}
-  </button>
+    <button
+      type="button"
+      class="disclosure__button localization-form__select localization-selector link link--text caption-large"
+      aria-expanded="false"
+      aria-controls="{{ localPosition }}-country-results"
+      aria-describedby="{{ localPosition }}Label"
+    >
+      <span>
+        {{- localization.country.name }}
+      </span>
+      {{ 'icon-caret.svg' | inline_asset_content }}
+    </button>
+  </div>
   <div class="disclosure__list-wrapper country-selector" hidden>
     <div class="country-filter{% unless show_country_filter %} country-filter--no-padding{% endunless %}">
       {% if show_country_filter %}
