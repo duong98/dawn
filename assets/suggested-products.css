@@ -1,0 +1,22 @@
+.tabs-container {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  gap: 2;
+}
+
+.tabs-content .tab-panel {
+  display: none;
+}
+.tabs-content .tab-panel.is-active {
+  display: block;
+}
+
+.recently-viewed-empty,
+.recently-viewed-error {
+  padding: 1rem;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
