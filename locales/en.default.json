@@ -355,6 +355,15 @@
       "carousel": "Carousel",
       "slide": "Slide"
     },
+    "suggested-products":{   
+      "name": "Suggested products",
+      "related_products": {
+        "name": "Related products"
+      },
+      "viewed_products": {
+        "name": "Viewed products"
+      }
+    },
     "page": {
       "title": "Page title"
     },
