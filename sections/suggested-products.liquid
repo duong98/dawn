@@ -175,7 +175,7 @@
           id="viewed-products-{{ section.id }}"
           data-section="{{ section.id }}"
           data-current-handle="{{ product.handle }}"
-          data-max-items="10"
+          data-max-items="{{ section.settings.max_viewed_products }}"
         >
           {%- liquid
             assign products_to_display = search.results_count
@@ -335,6 +335,16 @@
       "step": 1,
       "default": 4,
       "label": "t:sections.related-products.settings.products_to_show.label"
+    },
+    {
+      "type": "range",
+      "id": "max_viewed_products",
+      "min": 2,
+      "max": 15,
+      "step": 1,
+      "default": 10,
+      "label": "t:sections.suggested-products.viewed_products.settings.max-viewed-products",
+      "info": "This controls the maximum number of products stored and shown in the 'Recently Viewed' tab."
     },
     {
       "type": "range",
