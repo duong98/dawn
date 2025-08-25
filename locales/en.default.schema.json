@@ -2899,6 +2899,7 @@
           "heading": {
             "label": "Heading"
           },
+          "max-viewed-products":"Maximum recently viewed products",
           "products_to_show": {
             "label": "Product count"
           },
