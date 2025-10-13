@@ -150,6 +150,11 @@
       },
       "13565434122358736213": {
         "type": "shopify://apps/bss-loyalty-app/blocks/app-embed/0199cced-04c3-7d6d-a419-2e988a9cf10d",
+        "disabled": true,
+        "settings": {}
+      },
+      "243707675448773370": {
+        "type": "shopify://apps/bss-loyalty-app/blocks/loyalty-button/0199cced-04c3-7d6d-a419-2e988a9cf10d",
         "disabled": false,
         "settings": {}
       }
