@@ -148,13 +148,8 @@
         "disabled": true,
         "settings": {}
       },
-      "13565434122358736213": {
-        "type": "shopify://apps/bss-loyalty-app/blocks/app-embed/0199cced-04c3-7d6d-a419-2e988a9cf10d",
-        "disabled": true,
-        "settings": {}
-      },
-      "243707675448773370": {
-        "type": "shopify://apps/bss-loyalty-app/blocks/loyalty-button/0199cced-04c3-7d6d-a419-2e988a9cf10d",
+      "15038622487599810852": {
+        "type": "shopify://apps/bss-loyalty-app/blocks/loyalty-button/0199dbd5-99cd-7aaf-ad1e-7db2f0fb0ed0",
         "disabled": false,
         "settings": {}
       }
